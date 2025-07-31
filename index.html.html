@@ -1,100 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF‑8">
-  <meta name="viewport" content="width=device‑width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>JLK DARE ME S.A.C.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background: #003366; color: white; padding: 1em; }
-    nav a { color: white; margin: 0 1em; text-decoration: none; }
-    section { padding: 2em; }
-    .container { max-width: 800px; margin: auto; }
-    .card { background: #f5f5f5; padding: 1em; margin-bottom: 1em; border-radius: 4px; }
+    body { font-family: 'Roboto', sans-serif; margin:0; color:#333; background:#f2f2f2; }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1590658291460-d6c9b4c11c9c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      color:#fff; text-align:center; padding:6em 1em;
+    }
+    header h1 { font-size: 3em; margin-bottom: 0.3em; }
+    nav a {
+      color:#fff; margin:0 1em; text-decoration:none; font-weight:bold;
+      background-color: rgba(255, 255, 255, 0.1); padding: 0.5em 1em; border-radius: 5px;
+    }
+    nav a:hover { background-color: rgba(255, 255, 255, 0.3); }
+    section { padding:3em 2em; background:#fff; margin-bottom: 1em; }
+    h2 { color:#002d62; font-size: 2em; margin-bottom: 0.5em; }
+    p { max-width: 800px; margin: auto; }
+    .cards { display:flex; flex-wrap:wrap; gap:1.5em; justify-content: center; margin-top:2em; }
+    .card {
+      flex:1 1 calc(30% - 1em); background:#fff; border-radius:8px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1em;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img { width:100%; border-radius:6px; margin-bottom:1em; }
+    footer {
+      background:#002d62; color:#fff; text-align:center; padding:2em 1em;
+      font-size: 0.9em;
+    }
+    @media(max-width:768px){ .cards { flex-direction:column; } .card { flex:1 auto; } }
   </style>
 </head>
 <body>
+
   <header>
-    <div class="container">
-      <h1>JLK DARE ME S.A.C.</h1>
-      <nav>
-        <a href="#quienes">Quiénes Somos</a>
-        <a href="#sobre">Sobre Nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#clientes">Clientes</a>
-        <a href="#actividades">Actividades</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
+    <h1>JLK DARE ME S.A.C.</h1>
+    <p>Soluciones industriales con calidad y compromiso</p>
+    <nav>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
   </header>
 
-  <section id="quienes">
-    <div class="container">
-      <h2>Quiénes Somos</h2>
-      <p>Empresa peruana constituida como Sociedad Anónima Cerrada, activa desde enero de 2019.</p>
-    </div>
-  </section>
-
-  <section id="sobre">
-    <div class="container">
-      <h2>Sobre Nosotros</h2>
-      <p>JLK DARE ME S.A.C. es una empresa comprometida con la excelencia en la fabricación de productos metálicos para uso estructural. Con un equipo técnico altamente calificado, nos orientamos a brindar soluciones eficientes, seguras y de alta calidad a nuestros clientes del sector industrial y de construcción.</p>
-    </div>
+  <section id="nosotros">
+    <h2>Quiénes Somos</h2>
+    <p>JLK DARE ME S.A.C. es una empresa peruana con amplia experiencia en fabricación de estructuras metálicas, productos FRP y capacitaciones de seguridad. Nos enfocamos en soluciones duraderas, seguras y adaptadas a cada cliente.</p>
   </section>
 
   <section id="servicios">
-    <div class="container">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Diseño y fabricación de estructuras metálicas</li>
-        <li>Instalación de componentes estructurales</li>
-        <li>Asesoría técnica en proyectos industriales</li>
-        <li>Mantenimiento preventivo y correctivo</li>
-        <li>Ofrecemos capacitaciones de trabajos de alto riesgo</li>
-        <li>Fabricamos productos de FRP (Plástico reforzado con fibra de vidrio)</li>
-      </ul>
+    <h2>Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590658412085-2723f9d351fc?auto=format&fit=crop&w=800&q=80" alt="Estructuras Metálicas">
+        <h3>Estructuras Metálicas</h3>
+        <p>Fabricación e instalación de estructuras metálicas para la industria, minería y construcción.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1600267165517-c9ad97a8e9a3?auto=format&fit=crop&w=800&q=80" alt="Productos FRP">
+        <h3>Productos FRP</h3>
+        <p>Fabricamos piezas de plástico reforzado con fibra de vidrio para ambientes exigentes y corrosivos.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581092334394-9cbf7c0b5f72?auto=format&fit=crop&w=800&q=80" alt="Capacitaciones">
+        <h3>Capacitaciones</h3>
+        <p>Entrenamiento especializado en trabajos de alto riesgo y prevención de accidentes.</p>
+      </div>
     </div>
   </section>
 
   <section id="clientes">
-    <div class="container">
-      <h2>Clientes</h2>
-      <p>Hemos trabajado con empresas del rubro industrial, minero y constructor, brindando productos y servicios de alta calidad. Nos enorgullece ser parte del desarrollo de importantes proyectos en Perú.</p>
-      <ul>
-        <li>Empresas constructoras</li>
-        <li>Contratistas mineros</li>
-        <li>Fabricantes industriales</li>
-        <li>Gobiernos locales</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="actividades">
-    <div class="container">
-      <h2>Actividades</h2>
-      <div class="card">
-        <h3>Sector económico</h3>
-        <p>Fabricación de productos metálicos para uso estructural (CIIU 2511).</p>
-      </div>
-      <div class="card">
-        <h3>Comercio Exterior</h3>
-        <p>Importador/exportador, aunque no presenta actividad relevante en comercio exterior actualmente.</p>
-      </div>
-    </div>
+    <h2>Clientes</h2>
+    <p>Hemos brindado soluciones a empresas del sector minero, constructor e industrial, ofreciendo atención personalizada, cumplimiento de plazos y calidad garantizada.</p>
   </section>
 
   <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p><strong>Dirección:</strong> Calle Alcides Vigo, Urb. Honor y Leal, Lote 27, Mz D7, Santiago de Surco, Lima, Perú.</p>
-      <p><strong>Estado:</strong> Activo / Contribuyente “habido”.</p>
-    </div>
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Calle Alcides Vigo, Santiago de Surco, Lima, Perú</p>
+    <p><strong>Email:</strong> linosace@hotmail.com</p>
+    <p><strong>Teléfono:</strong> 942116070</p>
   </section>
 
   <footer>
-    <div class="container">
-      <p>© 2025 JLK DARE ME S.A.C. – Todos los derechos reservados.</p>
-    </div>
+    <p>&copy; 2025 JLK DARE ME S.A.C. – Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
